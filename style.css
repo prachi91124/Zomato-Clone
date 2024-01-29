@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    max-width: 100%;
+    justify-content: center;
+    background: transparent;
+    z-index: 1;
+    width: 100%; 
+    display: block;
+    position: absolute;   
+}
+nav{
+    width: 100%;
+    max-width: 110rem;
+    padding-right: 0px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 4;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 72px;
+    max-width: 100%;
+    background: transparent;
+    flex-wrap: nowrap;
+    width: 100%;
+    user-select: none;
+    opacity: 1;
+    padding: 1.7rem 0px;
+    margin: 0px;
+    transition: opacity 0.25s linear 0s, visibility 0.25s linear 0s, height 0.25s cubic-bezier(0.52, 0.16, 0.24, 1) 0s;
+
+}
+*, :after,:before{
+    box-sizing: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div, p, span{
+    font-size: 1.6rem;
+}
+nav li{
+    margin-right: 20px;
+    padding-bottom: 1rem;
+}
+nav li a{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: right;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 0.6rem;
+    vertical-align: middle;
+    background: transparent;
+    padding: 0.8rem !important;
+}
+.getapp{
+    text-decoration: none;
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+    max-width: 35rem;
+    /* overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; */
+    display: flex;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.app{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    width: 10px;
+    height: 10px;
+    
+}
+
+.navlinks{
+    display: flex;
+}
+body, button, input, input::placeholder{
+    font-family: Okra, Helvetica, sans-serif;
+
+}
+
+body, html{
+    font-size: 62.5%;
+    font-weight: 300;
+}
+.class1{
+    position: relative;
+    margin-bottom: 4rem;
+}
+.bg{
+    background: rgb(200, 200, 200);
+    height: calc(100vh-30rem);
+    min-height: 42rem;
+    max-height: 57rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.background{
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 1.4s ease 0s;
+    opacity: 1;
+}
+/* Background Image */
+.bgimg1{
+    filter: blur(20px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    border: 0px;
+}
+.bgimg2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 1.4s ease 0s;
+}
+
+.bgoverlay{
+    position: absolute;
+    bottom: calc(50% - 11.1rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    position: relative;
+    height: 6rem;
+    max-height: none;
+    width: 30rem;
+    background: transparent;
+}
+.logo .anilogo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1.4s ease 0s
+    
+}
+
+.logo .anilogo .bgimg1{
+    filter: blur(4px);
+    transform: none;
+    object-fit: contain;
+}
+
+.logo .bgimg2{
+    object-fit: contain;
+    transform: none;
+}
+.bgoverlay h1{
+    margin-top: 3rem;
+    color: white;
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+h1{
+    line-height: 1.2;
+    font-weight: 400;
+}
+.location input{
+    border: none;
+    font-size: 1.4rem;
+    margin: 0px 1rem 0px 0.5rem;
+}
